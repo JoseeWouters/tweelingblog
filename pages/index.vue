@@ -1,8 +1,8 @@
 <template>
 	<main class="posts">
+		<h1>Tweelingblog</h1>
 		<article class="post" v-for="post in posts" :key="post.id">
 			<h2><a :href="`blog/${post.slug}`">{{ post.title.rendered }}</a></h2>
-			<p>{{post.yoast_head}}</p>
 			<div v-html="post.excerpt.rendered"></div>
 		</article>
 	</main>
